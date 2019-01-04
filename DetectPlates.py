@@ -3,7 +3,7 @@
 import cv2
 import numpy as np
 import math
-import Main
+
 import random
 
 import Preprocess
@@ -147,7 +147,7 @@ def findPossibleCharsInScene(imgThresh):
         # end if
     # end for
 
-    if Main.showSteps == True: # show steps 
+    if Main.showSteps == True: # show steps
         print("\nstep 2 - len(contours) = " + str(len(contours)))  # 2362 with MCLRNF1 image
         print("step 2 - intCountOfPossibleChars = " + str(intCountOfPossibleChars))  # 131 with MCLRNF1 image
         cv2.imshow("2a", imgContours)
